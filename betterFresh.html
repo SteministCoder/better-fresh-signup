@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Better Fresh Food Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h2>Better</h2>
+      <h1 id="title">FRESH</h1>
+      <hr id="borderLine">
+      <p id="description">Sign-Up | Apply | Get Hired</p>
+    </header>
+    <form id="survey-form">
+      <fieldset id="login-data-field">
+        <label for="name">Name</label>
+        <input id="name" class="round-input" type="text" placeholder="i.e. Margaret Cho" required>
+        <label for="email">Email</label>
+        <input id="email" class="round-input" type="email" placeholder="i.e. MargaretCho@gmail.com" required>
+      </fieldset>
+      <fieldset class="general-field industry-data">
+        <legend>Current Industry</legend>
+        <select id="dropdown" class="round-input" name="currentIndustry">
+          <option value="">Please select an option</option>
+          <option value="hospitality">Hospitality</option>
+          <option value="tech">Tech</option>
+          <option value="agriculture">Agriculture</option>
+        </select>
+        <legend>Number of years in industry</legend>
+        <input type="number" class="round-input" id="number" min="0" max="50" placeholder="0-50">
+      </fieldset>
+      <fieldset class="general-field demographic-data">
+        <legend>Age (must be 21 or older to apply)</legend>
+        <label><input id="21to35" name="age" type="radio" value="1" checked> 21-35</label>
+        <label><input id="36to45" name="age" type="radio" value="2"> 36-45</label>
+        <label><input id="45plus" name="age" type="radio" value="3"> 45+</label>
+      </fieldset>
+      <fieldset class="general-field cuisine-data">
+        <legend>Cuisine(s) of interest:</legend>
+        <label><input id="american" type="checkbox" name="cuisine" value="american"> American</label>
+        <label><input id="mexican" type="checkbox" name="cuisine" value="mexican"> Mexican</label>
+        <label><input id="chinese" type="checkbox" name="cuisine" value="chinese"> Chinese</label>
+        <label><input id="mediterranean" type="checkbox" name="cuisine" value="mediterranean"> Mediterranean</label>
+      </fieldset>
+      <fieldset class="general-field about-user-input">
+        <legend>Please tell us a brief summary of your culinary experience:</legend>
+        <textarea class="round-input" name="experience" rows="7"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
