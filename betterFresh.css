@@ -1,0 +1,104 @@
+* {
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(130, 29, 22, 0.9);
+  color: #fff;
+  padding: 50px;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+}
+
+#borderLine {
+  border: solid 1px white;
+}
+
+#title {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  text-align: center;
+  font-size: 3.3rem;
+  margin-bottom: 20px;
+}
+
+header h2,
+#description {
+  font-family: Bookman, URW Bookman L, serif;
+}
+
+header h2 {
+  text-align: left;
+}
+
+#description {
+  padding: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#survey-form {
+  background-color: rgb(130, 29, 22);
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+select,
+textarea,
+legend,
+label,
+input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.5rem;
+}
+
+label,
+input {
+  display: inline-block;
+  width: auto; /* Changed from 100% to auto for inline layout */
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit {
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 1.4rem;
+  background-color: rgb(22, 130, 83);
+  color: white;
+  border: solid 3px white;
+  border-radius: 4px;
+  display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+#number,
+.general-field label {
+  display: inline-block;
+  align-self: flex-start;
+  margin-right: 10px;
+}
+
+#login-data-field label,
+#login-data-field input {
+  width: 100%; /* Removed display: block; since it's redundant for width: 100% */
+}
+
+.round-input {
+  border-radius: 4px;
+  padding: 2px 4px;
+}
